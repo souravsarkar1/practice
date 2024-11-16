@@ -4,7 +4,7 @@ import ficpa from "../../../assets/landingpage/ficpa.svg";
 import aicpa from "../../../assets/landingpage/aicpa.svg";
 import landingpageBG from "../../../assets/landingpage/landingPage.png";
 import { Star } from "lucide-react";
-
+import user from "../../../assets/landingpage/user.png"
 // import { Star } from "lucide-react";
 
 const LandingPage1 = () => {
@@ -48,7 +48,7 @@ const LandingPage1 = () => {
                     </div>
                     <div className="bg-gray-800 text-white p-4 md:p-6 rounded-lg shadow-lg flex flex-col md:flex-row w-full md:w-[70%] m-auto mt-4">
                         <div className="w-12 h-12 rounded-full bg-gray-700 flex-shrink-0 mb-4 md:mb-0 md:mr-4 mx-auto md:mx-0">
-                            <img src="profile-image.jpg" alt="Profile" className="w-full h-full object-cover rounded-full" />
+                            <img src={user} alt="Profile" className="w-full h-full object-cover rounded-full" />
                         </div>
                         <div className="flex flex-col justify-start items-center md:items-start">
                             <div className="text-center md:text-left">
