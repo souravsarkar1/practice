@@ -54,6 +54,13 @@ const LandingPage6 = () => {
                 <ExpertiseSection {...thirdCard} />
                 <ExpertiseSection {...forthdCard} />
             </div>
+            <div className="flex flex-row justify-center aligin-center">
+
+                <button className="bg-green-500  text-white font-bold py-3 mb-5 px-[100px] rounded hover:bg-green-600 transition duration-300">
+                    Book My Free Consultation →
+                </button>
+            </div>
+
         </div>
     )
 }
