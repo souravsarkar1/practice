@@ -2,28 +2,28 @@ import landingpageBG from "../../../assets/landingpage/lastimage.png";
 
 const LandingPage1 = () => {
     return (
-        <div className="h-[100vh]">
+        <div className="min-h-screen">
             <div
-                className="h-[100vh] bg-no-repeat bg-cover bg-center flex flex-col md:flex-row justify-start md:justify-center items-center overflow-y-auto md:overflow-hidden"
+                className="min-h-screen bg-no-repeat bg-cover bg-center flex flex-col md:flex-row justify-start md:justify-center items-center md:overflow-hidden"
                 style={{ backgroundImage: `url(${landingpageBG})` }}
             >
-                <div className="flex flex-col justify-center items-start h-auto md:h-[80%] w-full md:w-[50%] px-4 py-6 md:py-0">
-                    <div className="text-white p-8">
-                        <h1 className="text-4xl font-bold mb-4">
+                <div className="flex flex-col justify-center items-start w-full md:w-[50%] px-4 py-6 md:py-0 order-1 md:order-1">
+                    <div className="text-white p-4 md:p-8">
+                        <h1 className="text-3xl md:text-4xl font-bold mb-4">
                             Feeling Overwhelmed?
                         </h1>
-                        <p className="text-lg mb-4">
+                        <p className="text-base md:text-lg mb-4">
                             We Understand.
                         </p>
-                        <p className="text-lg mb-4">
+                        <p className="text-base md:text-lg mb-4">
                             Staying on top of accounting and taxes only gets more complicated from year to year. What if you miss an obscure regulation or complex new requirement? The penalties and stress can pile up quickly.
                         </p>
-                        <p className="text-lg">
+                        <p className="text-base md:text-lg">
                             The good news is you don't have to figure it all out alone. Place your trust in our team to get your books organized, taxes filed properly, and finances simplified.
                         </p>
                     </div>
                 </div>
-                <div className="w-full md:w-[50%] px-4 md:px-0 pb-6 md:pb-0">
+                <div className="w-full md:w-[50%] px-4 md:px-0 py-6 md:py-0 order-2 md:order-2">
                     <FreeConsultationForm />
                 </div>
             </div>
@@ -40,15 +40,15 @@ const FreeConsultationForm = () => {
             </p>
             <p className="text-green-600 text-center text-sm md:text-base"> {`Vibrant Orlando Community.`.toUpperCase()}</p>
             <form className="mt-4 md:mt-6">
-                <div className="mb-3 md:mb-4 flex flex-row items-center justify-center border border-black h-[5vh] rounded-lg p-2 gap-0">
+                <div className="mb-3 md:mb-4 flex flex-row items-center justify-center border border-black h-[40px] md:h-[5vh] rounded-lg p-2 gap-0">
                     <p className="w-[25%] md:w-[20%] text-sm md:text-base">Full Name:</p>
                     <input type="text" placeholder="John Doe" className="px-2 w-[75%] md:w-[80%] py-0 overflow-hidden text-sm md:text-base" />
                 </div>
-                <div className="mb-3 md:mb-4 flex flex-row items-center justify-center border border-black h-[5vh] rounded-lg p-2 gap-0">
+                <div className="mb-3 md:mb-4 flex flex-row items-center justify-center border border-black h-[40px] md:h-[5vh] rounded-lg p-2 gap-0">
                     <p className="w-[25%] md:w-[20%] text-sm md:text-base">Phone:</p>
                     <input type="text" placeholder="+987654321" className="px-2 w-[75%] md:w-[80%] py-0 overflow-hidden text-sm md:text-base" />
                 </div>
-                <div className="mb-3 md:mb-4 flex flex-row items-center justify-center border border-black h-[5vh] rounded-lg p-2 gap-0">
+                <div className="mb-3 md:mb-4 flex flex-row items-center justify-center border border-black h-[40px] md:h-[5vh] rounded-lg p-2 gap-0">
                     <p className="w-[40%] text-sm md:text-base">Enter Your Email:</p>
                     <input type="text" placeholder="John@Deo.Gmail.Com" className="px-2 w-[60%] py-0 overflow-hidden text-sm md:text-base" />
                 </div>

@@ -1,6 +1,3 @@
-// import React from 'react';
-// import { Card, CardContent } from "@/components/ui/card";
-// import { Button } from "@/components/ui/button";
 import { ClipboardCheck, MessageSquare, Sun } from "lucide-react";
 
 const AccountingSteps = () => {
@@ -26,7 +23,7 @@ const AccountingSteps = () => {
     ];
 
     return (
-        <div className="h-[100vh] mx-auto px-4 py-16 bg-[#fffbfb] w-full">
+        <div className="min-h-screen mx-auto px-4 py-16 bg-[#fffbfb] w-full">
             <div className="text-center mb-12">
                 <h1 className="text-4xl font-bold text-[#224859] mb-4">
                     3 Simple Steps To Effortless Accounting
@@ -36,7 +33,7 @@ const AccountingSteps = () => {
                 </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                 {steps.map((step) => (
                     <div key={step.number} className="border-none">
                         <div className="pt-6">

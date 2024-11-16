@@ -5,12 +5,11 @@ import aicpa from "../../../assets/landingpage/aicpa.svg";
 import landingpageBG from "../../../assets/landingpage/landingPage.png";
 import { Star } from "lucide-react";
 import user from "../../../assets/landingpage/user.png"
-// import { Star } from "lucide-react";
 
 const LandingPage1 = () => {
     const imageArray = [cpa, ficpa, aicpa];
     return (
-        <div className="h-[100vh]">
+        <div className="">
             <div className="flex justify-center items-center h-[5vh] bg-[#9D9863] px-4">
                 <h1 className="text-white text-center text-sm md:text-base">Get started today with a FREE consultation at a time that suits you</h1>
             </div>
@@ -27,10 +26,10 @@ const LandingPage1 = () => {
                 </div>
             </div>
             <div
-                className="h-[85vh] bg-no-repeat bg-cover bg-center flex flex-col md:flex-row justify-start md:justify-center items-center overflow-y-auto md:overflow-hidden"
-                style={{ backgroundImage: `url(${landingpageBG})` }}
+                className="min-h-screen md:h-[85vh] bg-no-repeat bg-cover bg-center flex flex-col md:flex-row justify-center items-center"
+                style={{ backgroundImage: `url(${landingpageBG})`, }}
             >
-                <div className="flex flex-col justify-center items-center h-auto md:h-[80%] w-full md:w-[50%] px-4 py-6 md:py-0">
+                <div className="flex flex-col justify-center items-center w-full md:w-[50%] px-4 py-6 md:py-0">
                     <div className="flex flex-row justify-center items-center gap-[10px] flex-wrap">
                         <div className="flex flex-row gap-[5px]">
                             {[...Array(5)].map((_, index) => (
@@ -43,7 +42,7 @@ const LandingPage1 = () => {
                         <h1 className="text-2xl md:text-4xl text-white text-center">Taking The Hassle</h1>
                         <h1 className="text-2xl md:text-4xl text-white text-center">Out Of Accounting</h1>
                     </div>
-                    <div className="flex flex-col justify-center m-auto items-center text-white text-lg md:text-2xl w-full md:w-[70%] font-light mt-4">
+                    <div className="flex flex-col justify-center items-center text-white text-lg md:text-2xl w-full md:w-[70%] font-light mt-4">
                         <h2 className="text-center">For individuals or businesses, we expertly deal with all your tax, accounting & bookkeeping needs, saving you time and money.</h2>
                     </div>
                     <div className="bg-gray-800 text-white p-4 md:p-6 rounded-lg shadow-lg flex flex-col md:flex-row w-full md:w-[70%] m-auto mt-4">
@@ -65,7 +64,7 @@ const LandingPage1 = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full md:w-[50%] px-4 md:px-0 pb-6 md:pb-0">
+                <div className="w-full md:w-[50%] px-4 md:px-0 py-6 md:py-0">
                     <FreeConsultationForm />
                 </div>
             </div>

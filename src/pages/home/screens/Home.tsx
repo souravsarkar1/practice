@@ -11,7 +11,7 @@ import LandingPage9 from "../components/LandingPage9"
 
 const Home = () => {
     return (
-        <div>
+        <div className="flex flex-col">
             <LandingPage1 />
             <AccountingSteps />
             <LandingPage3 />
