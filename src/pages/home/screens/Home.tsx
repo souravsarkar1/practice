@@ -3,6 +3,7 @@ import AccountingSteps from "../components/LandingPage2"
 import LandingPage3 from "../components/LandingPage3"
 import LandingPage4 from "../components/LandingPage4"
 import LandingPage5 from "../components/LandingPage5"
+import LandingPage6 from "../components/LandingPage6"
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <LandingPage3 />
             <LandingPage4 />
             <LandingPage5 />
+            <LandingPage6 />
         </div>
     )
 }
