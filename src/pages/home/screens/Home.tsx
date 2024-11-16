@@ -5,6 +5,7 @@ import LandingPage4 from "../components/LandingPage4"
 import LandingPage5 from "../components/LandingPage5"
 import LandingPage6 from "../components/LandingPage6"
 import LandingPage7 from "../components/LandingPage7"
+import LandingPage8 from "../components/LandingPage8"
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <LandingPage5 />
             <LandingPage6 />
             <LandingPage7 />
+            <LandingPage8 />
         </div>
     )
 }
